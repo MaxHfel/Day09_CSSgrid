@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding-bottom: 60px; 
+    font-family: 'Inter', Arial, sans-serif;
+    color: #222;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.nav li {
+    float: left
+}
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul.nav a:hover {
+    background-color: gray;
+    color: lightblue;
+}
+ul.nav a.active {
+    background-color: #2f4f3a;
+}
+
+/* Page layout */
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: grid;
+    grid-gap: 64px;
+}
+
+.hero {
+    text-align: center;
+}
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #2f4f3a;
+    font-weight: 600;
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+h1 {
+    font-size: 48px;
+    margin: 8px 0;
+}
+.lead {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
+    align-items: center;
+}
+.feature img {
+    width: 100%;
+    border-radius: 8px;
+}
+.skis img {
+    background-color: #f2f2f2;
+    max-height: 420px;
+    object-fit: contain;
+}
+h2 {
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+
+.specs {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+}
+.specs li {
+    border-top: 2px solid #2f4f3a;
+    padding-top: 8px;
+    font-weight: 600;
+}
+.specs span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* Three cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.card {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+.card h3 {
+    margin-top: 0;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+}
+.footer p {
+    margin: 0;
+}
